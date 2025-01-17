@@ -1,0 +1,56 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon/book-bible-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body cz-shortcut-listen="true">
+    <header class="header">
+        <nav class="header-nav">
+            <a class="header-nav-logo" href="#">
+                <i class="fa-solid fa-book-bible header-nav-logo-icon"></i>
+                <h1 class="header-nav-logo-text">Bíblia Conectada</h1>
+            </a>
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a class="header-nav-list-link" href="#">Bíblia</a></li>
+                <li class="header-nav-list-item"><a class="header-nav-list-link" href="#">Sobre</a></li>
+            </ul>
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a class="header-nav-list-link entrar-btn" href="#">Entrar</a></li>
+                <li class="header-nav-list-item"><a class="header-nav-list-link criar-conta-btn" href="#">Criar conta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="versosSection">
+        <h1 class="versos-title">Livro Capitulo 2</h1>
+        <div class="versosContainer">
+            <p class="versos-paragrafo">1. Olhei em seguida, e vi um homem segurando uma corda de medir.</p>
+            <p class="versos-paragrafo">2. Eu lhe perguntei: "Aonde você vai? " Ele me respondeu: "Vou medir Jerusalém para saber o seu comprimento e a sua largura".</p>
+            <p class="versos-paragrafo">3. Então o anjo que falava comigo retirou-se, e outro anjo foi ao seu encontro</p>
+            <p class="versos-paragrafo">4. e lhe disse: "Corra e diga àquele jovem: ‘Jerusalém será habitada como uma cidade sem muros por causa dos seus muitos habitantes e rebanhos.</p>
+            <p class="versos-paragrafo">5. E eu mesmo serei para ela um muro de fogo ao seu redor’, declara o Senhor, ‘e dentro dela serei a sua glória’.</p>
+            <p class="versos-paragrafo">6. "Atenção! Atenção! Fujam da terra do norte", declara o Senhor, "porque eu os espalhei aos quatro ventos da terra", diz o Senhor.</p>
+            <p class="versos-paragrafo">7. "Atenção, ó Sião! Escapem, vocês que vivem na cidade da Babilônia!</p>
+            <p class="versos-paragrafo">8. Porque assim diz o Senhor dos Exércitos: ‘Ele me enviou para buscar a sua glória entre as nações que saquearam vocês, porque todo o que neles tocar, toca na pupila dos olhos dele’.</p>
+            <p class="versos-paragrafo">9. Certamente levantarei a minha mão contra elas de forma que serão um espólio para os seus servos. Então vocês saberão que foi o Senhor dos Exércitos que me enviou.</p>
+            <p class="versos-paragrafo">10. "Cante e alegre-se, ó cidade de Sião! Porque venho fazer de você a minha habitação", declara o Senhor.</p>
+            <p class="versos-paragrafo">11. "Muitas nações se unirão ao Senhor naquele dia e se tornarão meu povo. Então você será a minha habitação e você reconhecerá que o Senhor dos Exércitos me enviou a você.</p>
+            <p class="versos-paragrafo">12. O Senhor herdará Judá como sua propriedade na terra santa e escolherá de novo Jerusalém.</p>
+            <p class="versos-paragrafo">13. Aquietem-se todos perante o Senhor, porque ele se levantou de sua santa habitação".</p>
+        </div>
+    </section>
+
+    <script>
+        const elements = document.querySelectorAll(".versos-paragrafo");
+
+        elements.forEach(element => {
+            element.addEventListener("click", () => {
+                elements.forEach(el => el.classList.remove("active"));
+                element.classList.add("active");
+            });
+        });
+    </script>
+</body>
+</html>

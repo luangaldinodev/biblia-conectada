@@ -1,0 +1,118 @@
+@import url(global/fonts.css);
+@import url(global/variables.css);
+@import url(pages/versos.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-inter);
+}
+
+body{
+    background-color: #FDF6E3;
+}
+
+/* Termina Padrões */
+
+.header{
+    background-color: #374151;
+    padding: 1.4rem 4rem;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    gap: 1rem;
+    color: #FDF6E3;
+    transition: all .2s ease-in-out;
+}
+
+.header-nav-logo-icon{
+    font-size: 2rem;
+}
+
+.header-nav-list{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-nav-list-item{
+    list-style: none;
+    transition: all .2s ease-in-out;
+}
+
+.header-nav-list-link{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #FDF6E3;
+}
+
+.header-nav-list-item:hover, .header-nav-logo:hover{
+    transform: translateY(-0.3rem);
+}
+
+.livros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.livros-title{
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #374151;
+}
+
+.livros-nomes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 2rem 0;
+}
+
+.versos-nomes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem 0;
+}
+
+.livros-link{
+    color: #FDF6E3;
+    background-color: #374151;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    transition: all .2s ease-in-out;
+}
+
+.livros-link:hover{
+    transform: translateY(-0.3rem);
+}
+
+.versos{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}

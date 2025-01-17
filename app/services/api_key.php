@@ -1,0 +1,3 @@
+<?php
+    $api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHIiOiJUdWUgSmFuIDA3IDIwMjUgMTc6MzM6MjEgR01UKzAwMDAubHVhbmdhbGRpbm9kZXZAZ21haWwuY29tIiwiaWF0IjoxNzM2MjcxMjAxfQ.Vv_I5E7iDYODfPxfH_kNyady_WbgZaDS0XXWz0vKnro";
+?>
