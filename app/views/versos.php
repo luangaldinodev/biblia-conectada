@@ -1,26 +1,36 @@
 <?php 
     include_once 'app/services/get_versos.php'; 
+    
+    if (!isset($response->verses)) {
 ?>
-
+    <!-- trecho em HTML -->
     <section class="versosSection">
-        <h1 class="versos-title">Livro Capitulo 2</h1>
-        <div class="versosContainer">
-        <?php
-            if (curl_errno($curl)) {
-                echo "<script>alert('Erro ao buscar capitulos!')</script";
-                header('Location: capitulos.php');
-            } else {
-                foreach(json_decode($response)->verses as $verso){
-        ?>
-            <p class="versos-paragrafo"><?= $verso->number?>. <?= $verso->text?></p>
-            <?php
-            }
-                }
-        ?>
-        </div>
+        <h1 class="versos-title">Versiculo não encontrado!</h1>
     </section>
 
-    <script>
+<?php
+    } //fechamento if !isset($response->verses
+    elseif(isset($response->verses)){
+?>
+        <!-- trecho em HTML -->
+        <section class="versosSection">
+        <h1 class="versos-title"><?= $nameBook?> - Capítulo <?= $capitulo?></h1>
+        <div class="versosContainer">
+<?php
+    foreach($response->verses as $verso){
+?>
+    <!-- trecho em HTML -->
+    <p class="versos-paragrafo"><?= $verso->number?>. <?= $verso->text?></p>
+            
+<?php
+    } //fechamento foreach($response->verses as $verso)
+?>
+
+    <!-- trecho em HTML -->
+    </div>
+    </section>
+
+    <script defer>
         const elements = document.querySelectorAll(".versos-paragrafo");
 
         elements.forEach(element => {
@@ -30,3 +40,15 @@
             });
         });
     </script>
+<?php
+    } //fechamento elseif elseif(isset($response->verses))
+    else{
+?>
+    <!-- trecho em HTML -->
+    <section class="versosSection">
+            <h1 class="versos-title">Resultado não encontrado!</h1>
+    </section>
+
+<?php
+    } //fechamento else
+?>

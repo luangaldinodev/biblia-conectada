@@ -1,0 +1,98 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíblia Conectada</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon/book-bible-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body cz-shortcut-listen="true">
+    <header class="header">
+        <a class="header-nav-logo" href="index.php">
+            <i class="fa-solid fa-book-bible header-nav-logo-icon"></i>
+            <h1 class="header-nav-logo-text">Bíblia Conectada</h1>
+        </a>
+        <nav class="header-nav" id="nav">
+            <button id="btn-mobile">Menu</button>
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a class="header-nav-list-link" href="#">Bíblia</a></li>
+                <li class="header-nav-list-item"><a class="header-nav-list-link" href="#">Sobre</a></li>
+                <li class="header-nav-list-item"><a class="header-nav-list-link entrar-btn" href="#">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <section class="livros">
+        <h1 class="livros-title">Livros</h1>
+        <div class="livros-nomes">
+                    <a class="livros-link" href="capitulos.php?livro=gn&amp;chapters=50&amp;name=Gênesis">Gênesis</a>
+                    <a class="livros-link" href="capitulos.php?livro=ex&amp;chapters=40&amp;name=Êxodo">Êxodo</a>
+                    <a class="livros-link" href="capitulos.php?livro=lv&amp;chapters=27&amp;name=Levítico">Levítico</a>
+                    <a class="livros-link" href="capitulos.php?livro=nm&amp;chapters=36&amp;name=Números">Números</a>
+                    <a class="livros-link" href="capitulos.php?livro=dt&amp;chapters=34&amp;name=Deuteronômio">Deuteronômio</a>
+                    <a class="livros-link" href="capitulos.php?livro=js&amp;chapters=24&amp;name=Josué">Josué</a>
+                    <a class="livros-link" href="capitulos.php?livro=jz&amp;chapters=21&amp;name=Juízes">Juízes</a>
+                    <a class="livros-link" href="capitulos.php?livro=rt&amp;chapters=4&amp;name=Rute">Rute</a>
+                    <a class="livros-link" href="capitulos.php?livro=1sm&amp;chapters=31&amp;name=1º Samuel">1º Samuel</a>
+                    <a class="livros-link" href="capitulos.php?livro=2sm&amp;chapters=24&amp;name=2º Samuel">2º Samuel</a>
+                    <a class="livros-link" href="capitulos.php?livro=1rs&amp;chapters=22&amp;name=1º Reis">1º Reis</a>
+                    <a class="livros-link" href="capitulos.php?livro=2rs&amp;chapters=25&amp;name=2º Reis">2º Reis</a>
+                    <a class="livros-link" href="capitulos.php?livro=1cr&amp;chapters=29&amp;name=1º Crônicas">1º Crônicas</a>
+                    <a class="livros-link" href="capitulos.php?livro=2cr&amp;chapters=36&amp;name=2º Crônicas">2º Crônicas</a>
+                    <a class="livros-link" href="capitulos.php?livro=ed&amp;chapters=10&amp;name=Esdras">Esdras</a>
+                    <a class="livros-link" href="capitulos.php?livro=ne&amp;chapters=13&amp;name=Neemias">Neemias</a>
+                    <a class="livros-link" href="capitulos.php?livro=et&amp;chapters=10&amp;name=Ester">Ester</a>
+                    <a class="livros-link" href="capitulos.php?livro=job&amp;chapters=42&amp;name=Jó">Jó</a>
+                    <a class="livros-link" href="capitulos.php?livro=sl&amp;chapters=150&amp;name=Salmos">Salmos</a>
+                    <a class="livros-link" href="capitulos.php?livro=pv&amp;chapters=31&amp;name=Provérbios">Provérbios</a>
+                    <a class="livros-link" href="capitulos.php?livro=ec&amp;chapters=12&amp;name=Eclesiastes">Eclesiastes</a>
+                    <a class="livros-link" href="capitulos.php?livro=ct&amp;chapters=8&amp;name=Cânticos">Cânticos</a>
+                    <a class="livros-link" href="capitulos.php?livro=is&amp;chapters=66&amp;name=Isaías">Isaías</a>
+                    <a class="livros-link" href="capitulos.php?livro=jr&amp;chapters=52&amp;name=Jeremias">Jeremias</a>
+                    <a class="livros-link" href="capitulos.php?livro=lm&amp;chapters=5&amp;name=Lamentações de Jeremias">Lamentações de Jeremias</a>
+                    <a class="livros-link" href="capitulos.php?livro=ez&amp;chapters=48&amp;name=Ezequiel">Ezequiel</a>
+                    <a class="livros-link" href="capitulos.php?livro=dn&amp;chapters=12&amp;name=Daniel">Daniel</a>
+                    <a class="livros-link" href="capitulos.php?livro=os&amp;chapters=14&amp;name=Oséias">Oséias</a>
+                    <a class="livros-link" href="capitulos.php?livro=jl&amp;chapters=3&amp;name=Joel">Joel</a>
+                    <a class="livros-link" href="capitulos.php?livro=am&amp;chapters=9&amp;name=Amós">Amós</a>
+                    <a class="livros-link" href="capitulos.php?livro=ob&amp;chapters=1&amp;name=Obadias">Obadias</a>
+                    <a class="livros-link" href="capitulos.php?livro=jn&amp;chapters=4&amp;name=Jonas">Jonas</a>
+                    <a class="livros-link" href="capitulos.php?livro=mq&amp;chapters=7&amp;name=Miquéias">Miquéias</a>
+                    <a class="livros-link" href="capitulos.php?livro=na&amp;chapters=3&amp;name=Naum">Naum</a>
+                    <a class="livros-link" href="capitulos.php?livro=hc&amp;chapters=3&amp;name=Habacuque">Habacuque</a>
+                    <a class="livros-link" href="capitulos.php?livro=sf&amp;chapters=3&amp;name=Sofonias">Sofonias</a>
+                    <a class="livros-link" href="capitulos.php?livro=ag&amp;chapters=2&amp;name=Ageu">Ageu</a>
+                    <a class="livros-link" href="capitulos.php?livro=zc&amp;chapters=14&amp;name=Zacarias">Zacarias</a>
+                    <a class="livros-link" href="capitulos.php?livro=ml&amp;chapters=4&amp;name=Malaquias">Malaquias</a>
+                    <a class="livros-link" href="capitulos.php?livro=mt&amp;chapters=28&amp;name=Mateus">Mateus</a>
+                    <a class="livros-link" href="capitulos.php?livro=mc&amp;chapters=16&amp;name=Marcos">Marcos</a>
+                    <a class="livros-link" href="capitulos.php?livro=lc&amp;chapters=24&amp;name=Lucas">Lucas</a>
+                    <a class="livros-link" href="capitulos.php?livro=jo&amp;chapters=21&amp;name=João">João</a>
+                    <a class="livros-link" href="capitulos.php?livro=at&amp;chapters=28&amp;name=Atos">Atos</a>
+                    <a class="livros-link" href="capitulos.php?livro=rm&amp;chapters=16&amp;name=Romanos">Romanos</a>
+                    <a class="livros-link" href="capitulos.php?livro=1co&amp;chapters=16&amp;name=1ª Coríntios">1ª Coríntios</a>
+                    <a class="livros-link" href="capitulos.php?livro=2co&amp;chapters=13&amp;name=2ª Coríntios">2ª Coríntios</a>
+                    <a class="livros-link" href="capitulos.php?livro=gl&amp;chapters=6&amp;name=Gálatas">Gálatas</a>
+                    <a class="livros-link" href="capitulos.php?livro=ef&amp;chapters=6&amp;name=Efésios">Efésios</a>
+                    <a class="livros-link" href="capitulos.php?livro=fp&amp;chapters=4&amp;name=Filipenses">Filipenses</a>
+                    <a class="livros-link" href="capitulos.php?livro=cl&amp;chapters=4&amp;name=Colossenses">Colossenses</a>
+                    <a class="livros-link" href="capitulos.php?livro=1ts&amp;chapters=5&amp;name=1ª Tessalonicenses">1ª Tessalonicenses</a>
+                    <a class="livros-link" href="capitulos.php?livro=2ts&amp;chapters=3&amp;name=2ª Tessalonicenses">2ª Tessalonicenses</a>
+                    <a class="livros-link" href="capitulos.php?livro=1tm&amp;chapters=6&amp;name=1ª Timóteo">1ª Timóteo</a>
+                    <a class="livros-link" href="capitulos.php?livro=2tm&amp;chapters=4&amp;name=2ª Timóteo">2ª Timóteo</a>
+                    <a class="livros-link" href="capitulos.php?livro=tt&amp;chapters=3&amp;name=Tito">Tito</a>
+                    <a class="livros-link" href="capitulos.php?livro=fm&amp;chapters=1&amp;name=Filemom">Filemom</a>
+                    <a class="livros-link" href="capitulos.php?livro=hb&amp;chapters=13&amp;name=Hebreus">Hebreus</a>
+                    <a class="livros-link" href="capitulos.php?livro=tg&amp;chapters=5&amp;name=Tiago">Tiago</a>
+                    <a class="livros-link" href="capitulos.php?livro=1pe&amp;chapters=5&amp;name=1ª Pedro">1ª Pedro</a>
+                    <a class="livros-link" href="capitulos.php?livro=2pe&amp;chapters=3&amp;name=2ª Pedro">2ª Pedro</a>
+                    <a class="livros-link" href="capitulos.php?livro=1jo&amp;chapters=5&amp;name=1ª João">1ª João</a>
+                    <a class="livros-link" href="capitulos.php?livro=2jo&amp;chapters=1&amp;name=2ª João">2ª João</a>
+                    <a class="livros-link" href="capitulos.php?livro=3jo&amp;chapters=1&amp;name=3ª João">3ª João</a>
+                    <a class="livros-link" href="capitulos.php?livro=jd&amp;chapters=1&amp;name=Judas">Judas</a>
+                    <a class="livros-link" href="capitulos.php?livro=ap&amp;chapters=22&amp;name=Apocalipse">Apocalipse</a>
+                </div>
+    </section> -->
+    
+    <script src="/assets/js/animations/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.livros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.livros-title{
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #374151;
+}
+
+.livros-nomes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: 2rem 0;
+}
+
+.livros-link{
+    flex-basis: 100%;
+    background-color: #374151;
+    color: #FDF6E3;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.livros-link:hover{
+    transform: translateY(-0.3rem);
+}
+
+@media (max-width: 425px){
+    .livros-link{
+        font-size: 1.4rem;
+    }
+
+    .livros-title{
+        font-size: 2.4rem;
+    }
+
+}
